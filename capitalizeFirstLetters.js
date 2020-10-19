@@ -1,4 +1,4 @@
-function capitalFirstLetters(str) {
+function capitalizeFirstLetters(str) {
   let words = str.split(' ');
 
   let array = [];
@@ -14,10 +14,4 @@ function capitalFirstLetters(str) {
   return array.join(' ');
 }
 
-const assert = require('assert');
-assert.strictEqual(
-  capitalFirstLetters('string with words'),
-  'String With Words'
-);
-assert.strictEqual(capitalFirstLetters('string'), 'String');
-assert.strictEqual(capitalFirstLetters(''), '');
+module.exports = capitalizeFirstLetters;
